@@ -1,0 +1,19 @@
+<h1>Fav Movies</h1>
+
+<button (click) = showFacts()>Show My Fav Movies!</button>
+
+<ol class="noFacts" (click) = showFacts()>
+    <li> Fast and the Furious</li>
+    <li>Frozen</li>
+    <li>Bad Boys</li>
+    <li>Jumanji</li>
+</ol>
+
+
+<form [formGroup] = "factCreator" (ngSubmit) = "onSubmit()">
+    <label >Author</label>
+    <input type="text" formControlName="authorName">
+    <label>Movie</label>
+    <input type="text" formControlName="funFact">
+    <button type="submit">Submit</button>
+</form>
